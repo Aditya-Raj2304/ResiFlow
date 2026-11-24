@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;1,500&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/royal.css">
+  <title>Sign in · ResiFlow</title>
+</head>
+
+<body class="royal">
+  <div id="toasts" aria-live="polite"></div>
+  <div class="auth">
+    <aside class="auth-art"
+      style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=70')">
+      <a class="brand" href="index.html" style="padding:0"><span class="brand-mark"><svg width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="4" y="3" width="16" height="18" rx="1" />
+            <path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2" />
+          </svg></span>ResiFlow</a>
+      <div>
+        <h2>Maintenance and amenities, handled in real time.</h2>
+        <p>Report issues, book the pool or gym, and see updates the moment they happen.</p>
+      </div>
+      <p class="small">© ResiFlow</p>
+    </aside>
+    <main class="auth-form">
+      <div class="auth-box">
+        <h1>Welcome back</h1>
+        <p class="muted" style="margin-bottom:22px">Sign in to your account.</p>
+        <form id="login-form" class="stack" novalidate>
+          <div class="alert error" id="form-error" role="alert" hidden></div>
+          <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email"
+              autocomplete="email" required>
+            <div class="field-error" data-error-for="email"></div>
+          </div>
+          <div class="field"><label for="password">Password</label>
+            <div class="pw-wrap"><input class="input" id="password" name="password" type="password"
+                autocomplete="current-password" required><button type="button" id="toggle-pw">Show</button></div>
+            <div class="field-error" data-error-for="password"></div>
+          </div>
+          <div class="row between"><span></span><a class="small" href="forgot-password.html">Forgot password?</a></div>
+          <button class="btn block" id="submit" data-busy="Signing in…">Sign in</button>
+        </form>
+        <div id="demo" hidden>
+          <div class="divider">Demo accounts</div>
+          <div class="card card-pad small stack-sm" style="background:var(--slate-soft)">
+            <div class="row between"><span><b>Admin</b> · admin@resiflow.com</span><code>Admin@123</code></div>
+            <div class="row between"><span><b>Manager</b> · manager@resiflow.com</span><code>Manager@123</code></div>
+            <div class="row between"><span><b>Tenant</b> · tenant@resiflow.com</span><code>Tenant@123</code></div>
+            <div class="row between"><span><b>Tenant 2</b> · tenant2@resiflow.com</span><code>Tenant@123</code></div>
+          </div>
+          <div class="demo-row" style="margin-top:10px"><button type="button" class="btn secondary sm"
+              data-email="tenant@resiflow.com" data-password="Tenant@123">Tenant</button><button type="button"
+              class="btn secondary sm" data-email="manager@resiflow.com"
+              data-password="Manager@123">Manager</button><button type="button" class="btn secondary sm"
+              data-email="admin@resiflow.com" data-password="Admin@123">Admin</button></div>
+          <button type="button" class="btn ghost sm block" id="reset-demo" style="margin-top:8px">Reset demo
+            data</button>
+        </div>
+        <p class="small muted" style="margin-top:22px;text-align:center">New here? <a href="signup.html">Create an
+            account</a></p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/login.js"></script>
+  <script>if (location.protocol === "file:") { var d = document.createElement("div"); d.style.cssText = "position:fixed;left:0;right:0;top:0;z-index:99;background:#fff;color:#000;padding:10px 16px;font:14px sans-serif;text-align:center"; d.textContent = "Open this site through a local server (e.g. run: npx serve .) — browsers block the app scripts on file://. The landing page works without it."; document.body.appendChild(d) }</script>
+</body>
+
+</html>

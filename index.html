@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResiFlow · Residences, run beautifully</title>
+  <meta name="description" content="Real-time maintenance and amenity booking for premium residential properties.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;1,500&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/royal.css">
+  <noscript>
+    <style>
+      .r-nav {
+        background: #000
+      }
+    </style>
+  </noscript>
+</head>
+
+<body class="royal">
+  <header class="r-nav" id="nav">
+    <a class="r-logo" href="index.html">ResiFlow</a>
+    <nav class="r-links" id="links" aria-label="Primary">
+      <a href="#about">About</a><a href="#communities">Properties</a><a href="#journal">Journal</a><a
+        href="#contact">Contact</a>
+      <a class="r-btn" href="login.html">Sign in</a>
+    </nav>
+    <button class="r-burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="r-stack" id="properties">
+    <section class="r-cs r-hero" aria-label="Introduction">
+      <div class="r-slide photo on"
+        style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=75')">
+      </div>
+      <div class="r-slide photo"
+        style="--img:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=75')">
+      </div>
+      <div class="r-slide photo"
+        style="--img:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=75')">
+      </div>
+      <div class="r-hero-copy"><span class="r-label">Residential management</span>
+        <h1>Live where everything runs beautifully.</h1><a class="r-btn" href="signup.html">Get started</a>
+      </div>
+      <div class="r-thumbs" id="thumbs">
+        <button class="photo on" aria-label="Show image 1"
+          style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=200&q=60')"></button>
+        <button class="photo" aria-label="Show image 2"
+          style="--img:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=200&q=60')"></button>
+        <button class="photo" aria-label="Show image 3"
+          style="--img:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=200&q=60')"></button>
+      </div>
+      <span class="r-scroll" aria-hidden="true"></span>
+    </section>
+
+    <section class="r-cs r-prop photo"
+      style="--img:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=75')"
+      aria-label="Lakeview Residency">
+      <a class="r-stretch" href="community.html?id=lakeview" aria-label="Open Lakeview Residency"></a>
+      <div class="in">
+        <h2>Lakeview Residency</h2>
+        <p>14 Kanke Road, Ranchi</p>
+        <div class="btns"><a class="r-btn" href="community.html?id=lakeview">Learn more</a><a class="r-btn ghost"
+            href="#communities">View all</a></div>
+      </div>
+      <span class="r-view">View property →</span>
+    </section>
+    <section class="r-cs r-prop photo"
+      style="--img:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=2000&q=75')"
+      aria-label="Hillcrest Heights">
+      <a class="r-stretch" href="community.html?id=hillcrest" aria-label="Open Hillcrest Heights"></a>
+      <div class="in">
+        <h2>Hillcrest Heights</h2>
+        <p>22 Bistupur Main Road, Jamshedpur</p>
+        <div class="btns"><a class="r-btn" href="community.html?id=hillcrest">Learn more</a><a class="r-btn ghost"
+            href="#communities">View all</a></div>
+      </div>
+      <span class="r-view">View property →</span>
+    </section>
+    <section class="r-cs r-prop photo"
+      style="--img:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=75')"
+      aria-label="Garden Court">
+      <a class="r-stretch" href="community.html?id=garden-court" aria-label="Open Garden Court"></a>
+      <div class="in">
+        <h2>Garden Court</h2>
+        <p>Hatia, Ranchi</p>
+        <div class="btns"><a class="r-btn" href="community.html?id=garden-court">Learn more</a><a class="r-btn ghost"
+            href="#communities">View all</a></div>
+      </div>
+      <span class="r-view">View property →</span>
+    </section>
+  </div>
+
+  <section class="r-story" id="about">
+    <div class="pic photo"
+      style="--img:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=75')"
+      role="img" aria-label="Interior"></div>
+    <div><span class="r-label">Our Story</span>
+      <h2>Service that feels personal, powered by something precise.</h2>
+      <p>ResiFlow was built for residences where details matter: a leaking tap fixed the same day, a pool booked without
+        a phone call, a manager who always knows what is happening.</p>
+      <p>Residents report issues and reserve amenities in seconds. Managers see every update the moment it happens, and
+        double bookings simply cannot occur.</p>
+      <div class="r-stats">
+        <div><b>3</b><span>Roles</span></div>
+        <div><b>0</b><span>Double bookings</span></div>
+        <div><b>Live</b><span>Updates</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="r-comm" id="communities" aria-label="Our communities">
+    <div class="r-comm-head">
+      <div>
+        <h2>Our communities</h2>
+        <p>Scroll sideways with your mouse or drag</p>
+      </div>
+      <div class="r-nav-btns"><button id="cprev" aria-label="Previous">←</button><button id="cnext"
+          aria-label="Next">→</button></div>
+    </div>
+    <div class="r-scroller" id="scroller" tabindex="0" aria-label="Communities, scroll horizontally">
+      <a class="r-comm-card" href="community.html?id=lakeview" draggable="false">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=70')">
+        </div><span>Lakeview Residency</span>
+      </a>
+      <a class="r-comm-card" href="community.html?id=hillcrest" draggable="false">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=70')">
+        </div><span>Hillcrest Heights</span>
+      </a>
+      <a class="r-comm-card" href="community.html?id=garden-court" draggable="false">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=70')">
+        </div><span>Garden Court</span>
+      </a>
+      <a class="r-comm-card" href="community.html?id=riverside-towers" draggable="false">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70')">
+        </div><span>Riverside Towers</span>
+      </a>
+      <a class="r-comm-card" href="community.html?id=the-residences" draggable="false">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=70')">
+        </div><span>The Residences</span>
+      </a>
+    </div>
+    <p class="r-scroll-hint">← Hover and scroll →</p>
+  </section>
+
+  <section class="r-testi" aria-label="Testimonials">
+    <h2>Testimonials</h2>
+    <div class="r-testi-grid">
+      <div class="pic photo"
+        style="--img:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=75')"
+        role="img" aria-label="Living room"></div>
+      <div class="r-t-main" id="tmain">
+        <div class="r-t-top">
+          <div class="r-stars" aria-label="5 stars">★★★★★</div><span class="r-count" id="tcount">01 / 03</span>
+        </div>
+        <blockquote class="r-quote" id="quote">“I report an issue, see it move to in progress, and it is fixed before I
+          have to chase anyone.”</blockquote>
+        <div class="r-who">
+          <div class="av" id="tav">R</div>
+          <div><b id="who">Resident</b><span id="role">Tenant, sample</span></div>
+        </div>
+        <div class="r-prog" id="tprog"><i></i></div>
+        <div class="r-voices" id="voices"></div>
+        <div class="r-t-foot"><span class="r-sample">Sample content · replace with real resident feedback</span>
+          <div class="r-arrows"><button id="prev" aria-label="Previous">←</button><button id="next"
+              aria-label="Next">→</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="r-journal" id="journal">
+    <h2>Journal</h2>
+    <div class="r-cards">
+      <a class="r-card" href="article.html?id=real-time-maintenance">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=70')">
+        </div><small>Article</small>
+        <h3>How real-time maintenance tracking shortens resolution times</h3><span class="more">Read article →</span>
+      </a>
+      <a class="r-card" href="article.html?id=conflict-free-booking">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=70')">
+        </div><small>Insight</small>
+        <h3>Why conflict-free amenity booking keeps residents happy</h3><span class="more">Read article →</span>
+      </a>
+      <a class="r-card" href="article.html?id=one-live-dashboard">
+        <div class="pic photo"
+          style="--img:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=70')">
+        </div><small>Article</small>
+        <h3>Inside a building run from one shared, live dashboard</h3><span class="more">Read article →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="r-cta photo"
+    style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=75')">
+    <div><span class="r-label">Join the Journey</span>
+      <h2>Begin your journey to effortless living.</h2><a class="r-btn" href="signup.html">Create account</a>
+    </div>
+  </section>
+
+  <footer class="r-footer" id="contact">
+    <div class="r-footer-in">
+      <div><a class="r-logo" href="index.html">ResiFlow</a>
+        <p class="lead">Subscribe for product updates and property-management insight.</p>
+        <form class="r-sub" id="sub"><input type="email" placeholder="Your Email Address" aria-label="Email address"
+            required><button class="r-btn">Get Notified</button></form>
+        <p class="xs" id="sub-msg" style="color:#9a9a9a;margin-top:8px" role="status"></p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#communities">Properties</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="login.html">Sign in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Socials</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="r-contact">
+        <div>
+          <h4>Phone</h4><span class="txt">+91 00000 00000</span>
+        </div>
+        <div>
+          <h4>Email</h4><span class="txt">hello@resiflow.com</span>
+        </div>
+        <div>
+          <h4>Address</h4><span class="txt">Main Road, Ranchi, Jharkhand 834001</span>
+        </div>
+      </div>
+    </div>
+    <div class="r-footer-in r-bottom" style="display:flex"><span>Images: <b>Unsplash</b></span><span>Designed and built
+        for ResiFlow</span><span>© All rights reserved</span></div>
+  </footer>
+  <script src="js/landing.js"></script>
+</body>
+
+</html>

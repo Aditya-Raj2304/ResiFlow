@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;1,500&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/royal.css">
+  <title>Create account · ResiFlow</title>
+</head>
+
+<body class="royal">
+  <div id="toasts" aria-live="polite"></div>
+  <div class="auth">
+    <aside class="auth-art"
+      style="--img:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1600&q=70')">
+      <a class="brand" href="index.html" style="padding:0"><span class="brand-mark"><svg width="18" height="18"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="4" y="3" width="16" height="18" rx="1" />
+            <path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2" />
+          </svg></span>ResiFlow</a>
+      <div>
+        <h2>Maintenance and amenities, handled in real time.</h2>
+        <p>Report issues, book the pool or gym, and see updates the moment they happen.</p>
+      </div>
+      <p class="small">© ResiFlow</p>
+    </aside>
+    <main class="auth-form">
+      <div class="auth-box">
+        <h1>Create your account</h1>
+        <p class="muted" style="margin-bottom:22px">Demo mode: accounts are stored in this browser only. After signing
+          up, an admin links you to a property.</p>
+        <form id="signup-form" class="stack" novalidate>
+          <div class="alert error" id="form-error" role="alert" hidden></div>
+          <div class="field"><label for="fullName">Full name</label><input class="input" id="fullName" name="fullName"
+              autocomplete="name">
+            <div class="field-error" data-error-for="fullName"></div>
+          </div>
+          <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email"
+              autocomplete="email">
+            <div class="field-error" data-error-for="email"></div>
+          </div>
+          <div class="field"><label for="phone">Phone (optional)</label><input class="input" id="phone" name="phone"
+              type="tel" autocomplete="tel" placeholder="+91 98765 43210">
+            <div class="field-error" data-error-for="phone"></div>
+          </div>
+          <div class="field"><label for="password">Password</label><input class="input" id="password" name="password"
+              type="password" autocomplete="new-password">
+            <div class="pw-meter" id="pw-meter"><i></i></div>
+            <div class="field-error" data-error-for="password"></div>
+          </div>
+          <div class="field"><label for="confirm">Confirm password</label><input class="input" id="confirm"
+              name="confirm" type="password" autocomplete="new-password">
+            <div class="field-error" data-error-for="confirm"></div>
+          </div>
+          <button class="btn block" id="submit" data-busy="Creating account…">Create account</button>
+        </form>
+        <div id="done" hidden class="alert success"><b>Check your email.</b>
+          <p class="small" style="margin-top:4px">We sent a confirmation link. Confirm your address, then <a
+              href="login.html">sign in</a>.</p>
+        </div>
+        <p class="small muted" style="margin-top:22px;text-align:center">Already registered? <a href="login.html">Sign
+            in</a></p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/signup.js"></script>
+</body>
+
+</html>

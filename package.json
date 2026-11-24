@@ -1,0 +1,10 @@
+{
+  "name": "resiflow-property-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time property rental, maintenance & amenity management (static HTML/CSS/JS + Supabase)",
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "check": "node scripts/check.mjs"
+  }
+}
